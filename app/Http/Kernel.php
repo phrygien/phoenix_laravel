@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Providers\SidebarBlade;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
