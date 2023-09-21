@@ -50,7 +50,7 @@
         </li>
         <li class="nav-item">
         <!-- label-->
-        <p class="navbar-vertical-label">Apps
+        <p class="navbar-vertical-label">Education
         </p>
         <hr class="navbar-vertical-line" />
         <!-- parent pages-->
@@ -61,7 +61,7 @@
             </a>
             <div class="parent-wrapper label-1">
             <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-e-commerce">
-                <li class="collapsed-nav-item-title d-none">E commerce
+                <li class="collapsed-nav-item-title d-none">{{ __('Paramètrages')}}
                 </li>
                 <li class="nav-item"><a class="nav-link dropdown-indicator" href="#nv-admin" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-admin">
                     <div class="d-flex align-items-center">
