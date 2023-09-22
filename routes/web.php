@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Plateforme\Administration\AdministrationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/*
+* routes pours l'administration du plateforme education
+*/
+Route::group(['prefix' => 'administration', 'middleware' => 'auth'], function(){
+    Route::get('ecole', [AdministrationController::class, 'pageEcole'])->name('administration.ecole');
+});
+/*
+* fin routes pour l'administration du plateforme education
+*/

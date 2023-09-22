@@ -56,7 +56,7 @@
         <!-- parent pages-->
         <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-e-commerce" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-e-commerce">
             <div class="d-flex align-items-center">
-                <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="shopping-cart"></span></span><span class="nav-link-text">E commerce</span>
+                <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="monitor"></span></span><span class="nav-link-text">{{ __('Mon école')}}</span>
             </div>
             </a>
             <div class="parent-wrapper label-1">
@@ -65,38 +65,38 @@
                 </li>
                 <li class="nav-item"><a class="nav-link dropdown-indicator" href="#nv-admin" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-admin">
                     <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-text">Admin</span>
+                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-text">Paramétrages</span>
                     </div>
                 </a>
                 <!-- more inner pages-->
                 <div class="parent-wrapper">
                     <ul class="nav collapse parent show" data-bs-parent="#e-commerce" id="nv-admin">
                     <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/add-product.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Add product</span>
+                        <div class="d-flex align-items-center"><span class="nav-link-text">{{ __('Année scolaire')}}</span>
                         </div>
                         </a>
                         <!-- more inner pages-->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/products.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Products</span>
+                        <div class="d-flex align-items-center"><span class="nav-link-text">{{ __('Cycles')}}</span>
                         </div>
                         </a>
                         <!-- more inner pages-->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/customers.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Customers</span>
+                        <div class="d-flex align-items-center"><span class="nav-link-text">{{ __('Niveau')}}</span>
                         </div>
                         </a>
                         <!-- more inner pages-->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/customer-details.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Customer details</span>
+                        <div class="d-flex align-items-center"><span class="nav-link-text">{{ __('Section')}}</span>
                         </div>
                         </a>
                         <!-- more inner pages-->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="apps/e-commerce/admin/orders.html" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Orders</span>
+                        <div class="d-flex align-items-center"><span class="nav-link-text">{{ __('Trimestre')}}</span>
                         </div>
                         </a>
                         <!-- more inner pages-->
@@ -199,15 +199,15 @@
         <!-- parent pages-->
         <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-CRM" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-CRM">
             <div class="d-flex align-items-center">
-                <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="phone"></span></span><span class="nav-link-text">CRM</span><span class="fa-solid fa-circle text-info ms-1 new-page-indicator" style="font-size: 6px"></span>
+                <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="settings"></span></span><span class="nav-link-text">{{ __('Administration')}}</span><span class="fa-solid fa-circle text-info ms-1 new-page-indicator" style="font-size: 6px"></span>
             </div>
             </a>
             <div class="parent-wrapper label-1">
             <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-CRM">
-                <li class="collapsed-nav-item-title d-none">CRM
+                <li class="collapsed-nav-item-title d-none">{{ __('Administration')}}
                 </li>
                 <li class="nav-item"><a class="nav-link" href="apps/crm/analytics.html" data-bs-toggle="" aria-expanded="false">
-                    <div class="d-flex align-items-center"><span class="nav-link-text">Analytics</span>
+                    <div class="d-flex align-items-center"><span class="nav-link-text">{{ __('Ecoles')}}</span>
                     </div>
                 </a>
                 <!-- more inner pages-->
@@ -1671,8 +1671,8 @@
     <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
     <a class="navbar-brand me-1 me-sm-3" href="index.html">
         <div class="d-flex align-items-center">
-        <div class="d-flex align-items-center"><img src="assets/img/icons/logo.png" alt="phoenix" width="27" />
-            <p class="logo-text ms-2 d-none d-sm-block">phoenix</p>
+        <div class="d-flex align-items-center"><img src="{{ asset('assets/img/icons/logo.png') }}" alt="phoenix" width="27" />
+            <p class="logo-text ms-2 d-none d-sm-block">SmartSchoolHub</p>
         </div>
         </div>
     </a>
